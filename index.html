@@ -5,32 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doros personal-homepage</title>
+    <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body>
     <header >
         <figure>
             <img
-              src="dsc-0673-2.jpeg"
+              src="images/dsc-0673-2.jpeg"
               alt="picture of Doro holding a chicken"
-              width="450" height="250"
+              width="100%"
             />
         </figure>
-    
-    <h1>Doros Homepage</h1>
-    <nav id="nav">
-        <a href>About Me<a>
-        <a href>Contact</a>
-        <a href>Skillset</a>
-        </nav>
+        
+        <h1>Doros Homepage</h1>
+        <div class="topnav">
+            <a class="about-me" href="#About me">About</a>
+            <a href="#skillset">Skillset</a>
+            <a href="#contact">Contact</a>
+          </div>
     </header>
+
     <main>
         <section id="about-me">
             <h2>About me</h2>
                 <p>
-                    Ich bin Doro Siemers, herzlich willkommen auf meiner ersten selbstbauten und gestalteten Homepage. 
+                    Ich bin Doro Siemers, herzlich willkommen auf meiner ersten selbstgebauten und -gestalteten Homepage. 
 
                     Hier stelle ich mich und meine zukünftigen Projekte vor. Ich freu mich auf Feedback und Komplimente!
-		        </p>
+                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ut, vitae quos aspernatur, laudantium voluptate, officiis modi dolore hic illum ducimus nisi quaerat sed nam. Maiores adipisci consequatur consequuntur laborum?
+                </p>
+
+        </section>
+        <section id="skillset">
+            <h2>Skillset</h2>
+                <p>Making life a litte more blissful. More to come!
+                </p>
+        </section>
+
         </section>
         <section id="contact">
             <h2>Contact</h2>
@@ -38,12 +49,29 @@
                     <a href="https://www.linkedin.com/in/doro-siemers-69213b163/">LinkedIn</a>
                     <a href="https://www.instagram.com/dorosiemers/?hl=de/">Instagram</a>
                 </p>
-        </section>
-        <section id="skillset">
-            <h2>Skillset</h2>
-                <p>Making life a litte more blissful. More to come!
-                </p>
-        </section>
+                <form action="" method="get" class="Kontaktformular">
+                    <div class="Kontaktformular">
+                      <label for="name">Dein Name: </label>
+                      <input type="text" name="name" id="name" required>
+                      <label for="email">Deine Email: </label>
+                      <input type="email" name="email" id="email" required>
+                    </div>
+                </form>
+                <br>
+                <form action="form.php" method="post"> 
+                    <div class="NachrichtKontaktformular">  
+                       <label for="text">Deine Nachricht: </label>
+                       <textarea id="text" name="text"></textarea>
+                       <br> 	
+                       <input type="submit" value="Auf gehts!" />
+                    </div> 
+                </form>
+        
     </main>
+    <footer>
+        <p>Copyright &copy; 2022, Doro Siemers
+        </p>
+        <a href="./impressum.html">Impressum</a>
+    </footer>
 </body>
 </html>
