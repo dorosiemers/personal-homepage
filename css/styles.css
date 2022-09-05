@@ -20,7 +20,7 @@ body {
             border:left;
             padding: auto;
             margin: auto;
-            }
+        }
 
         
         .topnav a {
@@ -28,7 +28,7 @@ body {
             text-align: center;
             text-decoration: none;
             margin: 10px;
-            }
+        }
 
         .topnav a:hover {
             background-color: rgb(227, 240, 240);;
@@ -43,9 +43,24 @@ body {
         h2{
             color: rgb(102, 160, 160);
         }
+    main{
+        display: flex table-column;
+        align-content: space-around;
+    }
+            .links a{
+                color: rgb(43, 33, 33);
+                text-align: center;
+                text-decoration: none;
+                align-content: space-around;
+            }
+
+            .links a:hover {
+                background-color: rgb(227, 240, 240);;
+                color: rgb(102, 160, 160);
+            }
 
     footer{
         background-color: rgb(102, 160, 160);
         margin: 2%;
         position: sticky;
-        }
+    }
